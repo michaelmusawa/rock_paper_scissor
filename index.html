@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
 </head>
 <body>
-    <h1>Welcome to a challenge</h1>
-    <h2>Humans vs Computers</h2>
-    <h3>Make your selection</h3>
+    <h1>Welcome to Rock Paper Scissors Challenge</h1>
+    <p>You have been selected to represent humans in this challenge, which side has better luck.
+        Don't fail us. 
+    </p>
+    <p>Good Luck!</p>
+    <div class="results">
+        <h2>Humans</h2>
+        <p id="human_points">0</p>
+        <h2 id="vs">vs</h2> 
+        <h2 >Computers</h2>
+        <p id="comp_points">0</p>
+    </div>
+    
+    <div class="display_selection">
+            <p class="human_choice">Your choice</p>
+            <h2 id="vs">vs</h2>
+            <p class="comp_choice">Computer choice</p>
+        </div>
+        <div id="selection_message">
+            <p id="msg_1">Humans Vs Computers</p>
+            <i> <p id="msg_2">We believe in you, you can beat the computer</p></i>
+        </div>
+    <h5>Click to make your selection</h5>
     <button id="btn_rock">Rock</button>
     <button id="btn_paper">Paper</button>
     <button id="btn_scissors">Scissors</button>
